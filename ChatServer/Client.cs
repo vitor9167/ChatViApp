@@ -1,16 +1,11 @@
 ﻿using ChatServer.Net.IO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ChatServer
 {
     internal class Client
     {
-        public string NomeUsuario{ get; set; }
+        public string NomeUsuario { get; set; }
         public Guid UID { get; set; }
         public TcpClient ClientSocket { get; set; }
 

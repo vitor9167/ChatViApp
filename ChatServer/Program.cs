@@ -1,5 +1,4 @@
 ﻿using ChatServer.Net.IO;
-using System;
 using System.Net;
 using System.Net.Sockets;
 
@@ -29,7 +28,7 @@ namespace ChatServer
         {
             foreach (var usuario in _usuarios)
             {
-                foreach(var usr in _usuarios)
+                foreach (var usr in _usuarios)
                 {
                     var broadcastPacket = new PacketBuilder();
                     broadcastPacket.WriteOpCode(1);
